@@ -1,0 +1,25 @@
+{
+  "name": "buy-sell-opensea-sdk-demo",
+  "version": "1.0.0",
+  "description": "See here for instructions: https://docs.opensea.io/docs/buy-sell-nfts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo/issues"
+  },
+  "homepage": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo#readme",
+  "dependencies": {
+    "@types/node": "^20.11.5",
+    "opensea-js": "^7.0.7",
+    "typescript": "^5.3.3"
+  }
+}
