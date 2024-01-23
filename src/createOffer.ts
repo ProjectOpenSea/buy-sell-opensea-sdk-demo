@@ -18,7 +18,7 @@ const createOffer = async () => {
 
     try {
         const response = await sdk.createOffer(offer);
-        console.log(response.orderHash);
+        console.log("Successfully created an offer with orderHash:", response.orderHash);
     } catch (error) {
         console.error("Error in createOffer:", error);
     }

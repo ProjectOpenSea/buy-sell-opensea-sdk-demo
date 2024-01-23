@@ -18,7 +18,7 @@ const createListing = () => __awaiter(void 0, void 0, void 0, function* () {
     let listingAmount = "";
     const offer = {
         accountAddress: constants_1.WALLET_ADDRESS,
-        startAmount: listingAmount,
+        startAmount: +listingAmount,
         asset: {
             tokenAddress: tokenAddress,
             tokenId: tokenId,

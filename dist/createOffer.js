@@ -9,14 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// createOffer.ts
 const constants_1 = require("./utils/constants");
 const createOffer = () => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("STARTED");
     // TODO: Fill in the token address and token ID of the NFT you want to make an offer on
-    let tokenAddress = "0x26acca8836164119fb4dd0d31917627c68558ec9";
-    let tokenId = "6546";
-    let offerAmount = "0.004";
+    let tokenAddress = "";
+    let tokenId = "";
+    let offerAmount = "";
     const offer = {
         accountAddress: constants_1.WALLET_ADDRESS,
         startAmount: offerAmount,
@@ -25,9 +23,13 @@ const createOffer = () => __awaiter(void 0, void 0, void 0, function* () {
             tokenId: tokenId,
         },
     };
-    console.log("Offer: ", offer);
-    const result = yield constants_1.sdk.createOffer(offer);
-    console.log("Result: ", result);
+    try {
+        const response = yield constants_1.sdk.createOffer(offer);
+        console.log(response.orderHash);
+    }
+    catch (error) {
+        console.error("Error in createOffer:", error);
+    }
 });
 // Check if the module is the main entry point
 if (require.main === module) {
