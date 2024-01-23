@@ -2,9 +2,11 @@
   "name": "buy-sell-opensea-sdk-demo",
   "version": "1.0.0",
   "description": "See here for instructions: https://docs.opensea.io/docs/buy-sell-nfts",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "createListing": "ts-node src/createListing.ts",
+    "createOffer": "ts-node src/createOffer.ts"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,9 @@
   "homepage": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo#readme",
   "dependencies": {
     "@types/node": "^20.11.5",
+    "ethers": "^6.10.0",
     "opensea-js": "^7.0.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }
