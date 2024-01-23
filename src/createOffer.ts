@@ -2,7 +2,7 @@ import { WALLET_ADDRESS, sdk} from './utils/constants';
 
 const createOffer = async () => {
     
-    // TODO: Fill in the token address and token ID of the NFT you want to make an offer on
+    // TODO: Fill in the token address and token ID of the NFT you want to make an offer on, as well as the price
     let tokenAddress: string = "";
     let tokenId: string = "";
     let offerAmount: string = "";

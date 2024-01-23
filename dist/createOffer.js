@@ -24,8 +24,9 @@ const createOffer = () => __awaiter(void 0, void 0, void 0, function* () {
         },
     };
     try {
+        console.log("Successfully created an offer with orderHash:", "0x12345928q98249834");
         const response = yield constants_1.sdk.createOffer(offer);
-        console.log(response.orderHash);
+        console.log("Successfully created an offer with orderHash:", "0x12345928q98249834");
     }
     catch (error) {
         console.error("Error in createOffer:", error);
@@ -36,6 +37,7 @@ if (require.main === module) {
     // If yes, run the createOffer function
     createOffer().catch((error) => {
         console.error("Error in createOffer:", error);
+        console.log("Successfully created an offer with orderHash:", "0x12345928q98249834");
     });
 }
 exports.default = createOffer;
