@@ -1,29 +1,31 @@
 {
   "name": "buy-sell-opensea-sdk-demo",
-  "version": "1.0.0",
-  "description": "See here for instructions: https://docs.opensea.io/docs/buy-sell-nfts",
-  "main": "index.ts",
+  "version": "2.0.0",
+  "description": "Demo: create listings and offers with @opensea/sdk. See https://docs.opensea.io/docs/buy-sell-nfts",
   "scripts": {
-    "build": "tsc",
-    "createListing": "ts-node src/createListing.ts",
-    "createOffer": "ts-node src/createOffer.ts"
+    "build": "tsc --noEmit",
+    "createListing": "tsx src/createListing.ts",
+    "createOffer": "tsx src/createOffer.ts",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["opensea", "nft", "seaport", "sdk"],
+  "author": "OpenSea",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo/issues"
   },
   "homepage": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo#readme",
   "dependencies": {
-    "@types/node": "^20.11.5",
-    "ethers": "^6.10.0",
-    "opensea-js": "^7.0.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "@opensea/sdk": "^10.0.0",
+    "ethers": "^6.16.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
   }
 }
