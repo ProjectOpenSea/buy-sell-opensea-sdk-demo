@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ProjectOpenSea/buy-sell-opensea-sdk-demo#readme",
   "dependencies": {
     "@opensea/sdk": "^10.0.0",
-    "ethers": "^6.16.0"
+    "ethers": "^6.17.0"
   },
   "devDependencies": {
     "tsx": "^4.19.0",
